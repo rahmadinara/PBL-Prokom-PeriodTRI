@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Event Confirmation - PeriodTRI{% endblock %}
+
+{% block content %}
+<div class="confirmation-container">
+    <h2 class="confirmation-heading">Event Added to Google Calendar</h2>
+    <p class="confirmation-message">
+        Your next period start date has been added to your Google Calendar.
+    </p>
+    <a href="{{ url_for('result') }}" class="back-button">← Back</a>
+    <a href="{{ event_link }}" class="view-event-button" target="_blank">View Event in Google Calendar</a>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Tips - Fase Luteal{% endblock %}
+
+{% block content %}
+<div class="tips-container">
+    <h2 class="tips-title">T I P S</h2>
+    <div class="tips-content-box">
+        <h3>Fase Luteal</h3>
+        <p><strong>Durasi:</strong> 11-17 hari</p>
+        <p><strong>Tips:</strong></p>
+        <ul>
+            <li><strong>Perhatikan gejala PMS:</strong> Jika mengalami gejala seperti kembung atau perubahan suasana hati, pertimbangkan untuk mengurangi kafein dan garam.</li>
+            <li><strong>Konsumsi makanan kaya magnesium:</strong> Makanan seperti pisang, alpukat, dan kacang-kacangan dapat membantu meredakan gejala PMS.</li>
+            <li><strong>Aktivitas fisik moderat:</strong> Latihan ringan seperti berjalan atau yoga dapat membantu mengurangi ketegangan dan meningkatkan suasana hati.</li>
+        </ul>
+    </div>
+    <div class="button-navigation">
+        <a href="{{ url_for('tips3') }}" class="back-button">← Back</a>
+        <a href="{{ url_for('choose_menu') }}" class="next-button">Back to Menu</a>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Choose Menu - PeriodTRI{% endblock %}
+
+{% block content %}
+
+    <!-- Option Container -->
+    <div class="choose-menu-container">
+        <h2 class="choose-menu-heading">Where would you like to start?</h2>
+
+        <!-- Period Calculator Option -->
+        <div class="options-container">
+            <div class="option">
+                <a href="{{ url_for('input_form') }}" class="icon calculator-icon"></a>
+                <p class="option-title">PERIOD <br> CALCULATOR</p>
+            </div>
+
+            <!-- Period Tips Option -->
+            <div class="option">
+                <a href="{{ url_for('tips') }}" class="icon tips-icon"></a>
+                <p class="option-title">PERIOD <br> TIPS</p>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <a href="{{ url_for('index') }}" class="exit-button">EXIT</a>
+    </div>
+    
+{% endblock %}

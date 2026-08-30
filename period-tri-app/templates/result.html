@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Result - PeriodTRI{% endblock %}
+
+{% block content %}
+<div class="result-container">
+    <h2 class="greeting">Hi, {{ name }}!</h2>
+    <p class="bmi-info">
+        With the BMI calculated from your data, we found a result of <strong>{{ bmi }}</strong>, 
+        which suggests that you are <strong>{{ weight_status }}</strong>.
+    </p>
+    
+    <p class="period-estimate">
+        You’re estimated to be <strong>{{ days }}</strong> days away from your next period, 
+        expected on <strong>{{ next_period_date }}</strong>.
+    </p>
+    <div class="countdown-container">
+        <div class="countdown-box">
+            <p class="countdown-title">You're estimated to be</p>
+            <p class="countdown-number">{{ days }}</p>
+            <p class="countdown-text">DAYS</p>
+        </div>
+    </div>
+    <a href="{{ url_for('input_form') }}" class="back-button" style="width: 123px;">← New Form</a>
+    <a href="{{ url_for('authorize') }}" class="add-calendar-button">Add to Google Calendar</a>
+    <a href="{{ url_for('choose_menu') }}" class="back-button">Return Menu →</a>
+</div>
+{% endblock %}

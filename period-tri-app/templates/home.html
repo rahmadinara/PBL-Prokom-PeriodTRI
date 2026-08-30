@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home - PeriodTRI{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <!-- Background Image -->
+        <div class="background"></div>
+    
+        <!-- Top bar and transparent overlay -->
+        <div class="top-bar"></div>
+        <div class="top-transparent-bar"></div>
+    
+         <!-- Countdown Box -->
+         <div class="countdown-container">
+            <div class="countdown-box">
+                <p class="countdown-title">You're estimated to be</p>
+                <p class="countdown-number" id="countdown-number">?</p>
+                <p class="countdown-text">DAYS</p>
+                <p class="countdown-footer">away from your period</p>
+            </div>
+            
+            <div class="right-content">
+                <h2 class="text-home">Track your period estimates with a counter <br> and explore helpful women's health tips!</h2>
+                <div class="button-container">
+                    <a href="{{ url_for('choose_menu') }}" class="button-text">START HERE!</a>
+                </div>
+            </div>
+        </div>        
+    </div> 
+{% endblock %}

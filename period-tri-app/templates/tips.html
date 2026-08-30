@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Tips - PeriodTRI{% endblock %}
+
+{% block content %}
+<div class="tips-container">
+    <!-- Title Section -->
+    <h2 class="tips-title">T I P S</h2>
+
+    <!-- Tips Content Box -->
+    <div class="tips-content-box">
+        <h3>Fase Menstruasi</h3>
+        <p><strong>Durasi:</strong> 2-7 hari</p>
+        <p><strong>Tips:</strong></p>
+        <ul>
+            <li><strong>Istirahat yang cukup:</strong> Tubuh mungkin merasa lelah dan membutuhkan lebih banyak istirahat.</li>
+            <li><strong>Konsumsi makanan bergizi:</strong> Fokus pada makanan kaya zat besi dan vitamin untuk menggantikan kehilangan darah, seperti sayuran hijau, daging, dan kacang-kacangan.</li>
+            <li><strong>Hidrasi:</strong> Penting untuk tetap terhidrasi dengan baik, mengingat kehilangan cairan selama menstruasi.</li>
+            <li><strong>Olahraga ringan:</strong> Aktivitas seperti berjalan atau yoga dapat membantu mengurangi kram dan meningkatkan suasana hati.</li>
+        </ul>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="button-navigation">
+        <a href="{{ url_for('choose_menu') }}" class="back-button">← Back</a>
+        <a href="{{url_for('tips2')}}" class="next-button">Next →</a>
+    </div>
+</div>
+{% endblock %}

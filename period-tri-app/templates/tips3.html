@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Tips - Fase Ovulasi{% endblock %}
+
+{% block content %}
+<div class="tips-container">
+    <h2 class="tips-title">T I P S</h2>
+    <div class="tips-content-box">
+        <h3>Fase Ovulasi</h3>
+        <p><strong>Durasi:</strong> 1 hari</p>
+        <p><strong>Tips:</strong></p>
+        <ul>
+            <li><strong>Maksimalkan peluang pembuahan:</strong> Jika berencana untuk hamil, lakukan hubungan intim selama fase ini karena sel telur hanya bertahan sekitar 24 jam setelah ovulasi.</li>
+            <li><strong>Perhatikan tanda-tanda ovulasi:</strong> Gejala seperti peningkatan suhu basal tubuh atau perubahan pada lendir serviks dapat membantu Anda mengetahui kapan ovulasi terjadi.</li>
+            <li><strong>Tetap aktif:</strong> Olahraga dapat membantu meningkatkan sirkulasi darah dan energi, sehingga Anda merasa lebih bertenaga.</li>
+        </ul>
+    </div>
+    <div class="button-navigation">
+        <a href="{{ url_for('tips2') }}" class="back-button">← Back</a>
+        <a href="{{ url_for('tips4') }}" class="next-button">Next →</a>
+    </div>
+</div>
+{% endblock %}

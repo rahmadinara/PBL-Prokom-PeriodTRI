@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Tips - Fase Folikuler{% endblock %}
+
+{% block content %}
+<div class="tips-container">
+    <h2 class="tips-title">T I P S</h2>
+    <div class="tips-content-box">
+        <h3>Fase Folikuler</h3>
+        <p><strong>Durasi:</strong> 7-16 hari</p>
+        <p><strong>Tips:</strong></p>
+        <ul>
+            <li><strong>Nutri seimbang:</strong> Tingkatkan asupan protein dan serat untuk mendukung pertumbuhan folikel.</li>
+            <li><strong>Latihan fisik:</strong> Aktivitas fisik dapat meningkatkan energi dan memperbaiki suasana hati.</li>
+            <li><strong>Manajemen stres:</strong> Praktikkan teknik relaksasi seperti meditasi atau pernapasan dalam untuk mengurangi stres yang dapat memengaruhi keseimbangan hormon.</li>
+        </ul>
+    </div>
+    <div class="button-navigation">
+        <a href="{{ url_for('tips') }}" class="back-button">← Back</a>
+        <a href="{{ url_for('tips3') }}" class="next-button">Next →</a>
+    </div>
+</div>
+{% endblock %}
